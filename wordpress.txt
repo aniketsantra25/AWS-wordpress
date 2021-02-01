@@ -1,0 +1,56 @@
+To update DNF
+cmd--> dnf update
+
+Install HTTPD server  
+cmd--> dnf install httpd -y
+
+Installing VIM & wget 
+cmd--> yum install vim wget -y
+
+epel release:
+cmd --> yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+
+Remi repository Fo  PHP 7.4:
+cmd --> yum -y install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+
+PHP 7.4 Installation:
+cmd --> dnf module install php:remi-7.4
+
+check version:
+cmd--> php --version
+
+PHP-MYSQLND INstallation:
+cmd --> dnf install php-mysqlnd
+
+download Wordpress file:
+cmd --> wget https://wordpress.org/latest.tar.gz
+
+extract rar file at doc root:
+cmd --> tar xf latest.tar.gz -C /var/www/html
+
+Starting httpd server
+
+cmd--> systemctl start httpd
+cmd --> systemctl status httpd
+
+
+
+Install mysql
+cmd --> dnf install mysql -y
+cmd --> rpm -q mysql
+
+
+Connect to database
+mysql -h END_POINT -u admin
+
+
+to see data base:
+show databases;
+
+to create new database:
+create database mydb;
+
+doc root /var/www/html/wordpress
+
+edit file
+vi wp-config.php
